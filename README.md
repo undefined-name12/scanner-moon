@@ -1,4 +1,4 @@
-# SkyIsYours
+# MOON SCANNER
 Un escáner y un Bruter con distribución de habilidades de trabajo
 
 ## Características
