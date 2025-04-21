@@ -80,8 +80,4 @@ RAM: 16 GB
 Ancho de banda: 100 Mbps
 ```
 
-### Referencia: Ataque de diccionario de 1000 pasadas
-
-![imagen](https://github.com/polymaster3313/SkyIsYours/assets/93959737/6fc77c9f-9f15-441f-bc95-aaa262985e4d)
-
-### Referencia: Diccionario de 10 000 pasadas ¡Ataque! [imagen](https://github.com/polymaster3313/SkyIsYours/assets/93959737/11d7a186-490a-4e1c-9047-d8a754a2208d)
+### Referencia: Diccionario de 10 000 pasadas ¡Ataque! [imagen](https://i.ibb.co/WNTnjSY9/332048560-11d7a186-490a-4e1c-9047-d8a754a2208d.png)
