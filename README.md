@@ -12,23 +12,23 @@ Modo interproceso
 SSH
 ```
 
-## La arquitectura Sky
+## La arquitectura Moon scanner
 ### Balanceo de carga
 ```sirena
 grafo TD;
-SkyScanner --> |126.207.193.116| Skybruter1;
-SkyScanner --> |159.27.168.28| Skybruter2;
-SkyScanner --> |156.213.208.17| Skybruter3;
-SkyScanner --> |11.77.180.157| Skybruter4; ```
+Moon scannerScanner --> |126.207.193.116| Moon scannerbruter1;
+Moon scannerScanner --> |159.27.168.28| Moon scannerbruter2;
+Moon scannerScanner --> |156.213.208.17| Moon scannerbruter3;
+Moon scannerScanner --> |11.77.180.157| Moon scannerbruter4; ```
 
-## SkyBruter
+## Moon scannerBruter
 ### ola rápida
 
-Skybruter inicia una ola rápida generando un grupo limitado de hasta 200 gorutinas, cada una intentando conectarse al servidor con contraseñas diferentes. En caso de limitación de velocidad, la gorutina se une a una cola de ola lenta. Si el resultado indica una contraseña inválida o limitación de velocidad, la gorutina cede su posición, permitiendo que se unan otras gorutinas con contraseñas diferentes. Al descubrir la contraseña correcta, no se permiten nuevas gorutinas y la ola lenta se cancela. Si la ola rápida finaliza sin la contraseña correcta y con contraseñas en la cola lenta, la ola lenta se inicia.
+Moon scannerbruter inicia una ola rápida generando un grupo limitado de hasta 200 gorutinas, cada una intentando conectarse al servidor con contraseñas diferentes. En caso de limitación de velocidad, la gorutina se une a una cola de ola lenta. Si el resultado indica una contraseña inválida o limitación de velocidad, la gorutina cede su posición, permitiendo que se unan otras gorutinas con contraseñas diferentes. Al descubrir la contraseña correcta, no se permiten nuevas gorutinas y la ola lenta se cancela. Si la ola rápida finaliza sin la contraseña correcta y con contraseñas en la cola lenta, la ola lenta se inicia.
 
 ```sirena
 gráfico TD
-subgráfico SkyBruter
+subgráfico Moon scannerBruter
 A[rapidwave] -->|Genera Grupo| B[gorutina grupo 200 tasa]
 B -->|1| C[contraseña123]
 B -->|2| D[contraseñadébil]
@@ -58,7 +58,7 @@ Slowwave está diseñado para validar contraseñas obtenidas de una fuente con v
 
 ```sirena
 grafo TD
-subgrafo SkyBruter
+subgrafo Moon scannerBruter
 A[Slowwave] -->|acceso| B[cola lenta]
 B -->|Si está vacío| O[Termina]
 B -->|recibir contraseña| C[contraseña]
