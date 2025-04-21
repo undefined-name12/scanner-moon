@@ -16,10 +16,10 @@ SSH
 ### Balanceo de carga
 ```sirena
 grafo TD;
-Moon scannerScanner --> |126.207.193.116| Moon scannerbruter1;
-Moon scannerScanner --> |159.27.168.28| Moon scannerbruter2;
-Moon scannerScanner --> |156.213.208.17| Moon scannerbruter3;
-Moon scannerScanner --> |11.77.180.157| Moon scannerbruter4; ```
+Moon Scanner --> |126.207.193.116| Moon scannerbruter1;
+Moon Scanner --> |159.27.168.28| Moon scannerbruter2;
+Moon Scanner --> |156.213.208.17| Moon scannerbruter3;
+Moon Scanner --> |11.77.180.157| Moon scannerbruter4; ```
 
 ## Moon scannerBruter
 ### ola rápida
